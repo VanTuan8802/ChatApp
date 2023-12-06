@@ -19,6 +19,13 @@
 		AA62E6202B2019F30045263A /* ChatAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA62E61F2B2019F30045263A /* ChatAppUITests.swift */; };
 		AA62E6222B2019F30045263A /* ChatAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA62E6212B2019F30045263A /* ChatAppUITestsLaunchTests.swift */; };
 		AA62E62F2B201A660045263A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AA62E62E2B201A660045263A /* GoogleService-Info.plist */; };
+		AA62E6352B201DB20045263A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA62E6332B201DB20045263A /* LoginViewController.swift */; };
+		AA62E6362B201DB20045263A /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA62E6342B201DB20045263A /* LoginViewController.xib */; };
+		AA62E6392B201DCA0045263A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA62E6372B201DCA0045263A /* SignUpViewController.swift */; };
+		AA62E63A2B201DCA0045263A /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA62E6382B201DCA0045263A /* SignUpViewController.xib */; };
+		AA8054C22B201EA80045476A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8054C02B201EA80045476A /* HomeViewController.swift */; };
+		AA8054C32B201EA80045476A /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA8054C12B201EA80045476A /* HomeViewController.xib */; };
+		AA8054C62B201EE10045476A /* NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8054C52B201EE10045476A /* NSObject.swift */; };
 		C6EB64200E56866A285161CE /* Pods_ChatAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E7554A126DF134852056B3 /* Pods_ChatAppTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +68,13 @@
 		AA62E61F2B2019F30045263A /* ChatAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatAppUITests.swift; sourceTree = "<group>"; };
 		AA62E6212B2019F30045263A /* ChatAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		AA62E62E2B201A660045263A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AA62E6332B201DB20045263A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		AA62E6342B201DB20045263A /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		AA62E6372B201DCA0045263A /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		AA62E6382B201DCA0045263A /* SignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
+		AA8054C02B201EA80045476A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		AA8054C12B201EA80045476A /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		AA8054C52B201EE10045476A /* NSObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObject.swift; sourceTree = "<group>"; };
 		B15B9D821637C2AC2097B369 /* Pods-ChatAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatAppTests.release.xcconfig"; path = "Target Support Files/Pods-ChatAppTests/Pods-ChatAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		E9E7554A126DF134852056B3 /* Pods_ChatAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -128,6 +142,8 @@
 		AA62E5FD2B2019F20045263A /* ChatApp */ = {
 			isa = PBXGroup;
 			children = (
+				AA8054C42B201EAC0045476A /* Model */,
+				AA62E6302B201C8B0045263A /* Screen */,
 				AA62E5FE2B2019F20045263A /* AppDelegate.swift */,
 				AA62E6002B2019F20045263A /* SceneDelegate.swift */,
 				AA62E6022B2019F20045263A /* ViewController.swift */,
@@ -157,6 +173,51 @@
 			path = ChatAppUITests;
 			sourceTree = "<group>";
 		};
+		AA62E6302B201C8B0045263A /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				AA8054BF2B201E980045476A /* Home */,
+				AA62E6322B201CAB0045263A /* SignUp */,
+				AA62E6312B201CA50045263A /* Login */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		AA62E6312B201CA50045263A /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				AA62E6332B201DB20045263A /* LoginViewController.swift */,
+				AA62E6342B201DB20045263A /* LoginViewController.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		AA62E6322B201CAB0045263A /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				AA62E6372B201DCA0045263A /* SignUpViewController.swift */,
+				AA62E6382B201DCA0045263A /* SignUpViewController.xib */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		AA8054BF2B201E980045476A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				AA8054C02B201EA80045476A /* HomeViewController.swift */,
+				AA8054C12B201EA80045476A /* HomeViewController.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		AA8054C42B201EAC0045476A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AA8054C52B201EE10045476A /* NSObject.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		DB3237CAF340112DCA36133B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -167,7 +228,6 @@
 				969FE81EE8B2487F1093D8C2 /* Pods-ChatAppTests.debug.xcconfig */,
 				B15B9D821637C2AC2097B369 /* Pods-ChatAppTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -280,9 +340,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA62E6362B201DB20045263A /* LoginViewController.xib in Resources */,
 				AA62E60B2B2019F30045263A /* LaunchScreen.storyboard in Resources */,
 				AA62E62F2B201A660045263A /* GoogleService-Info.plist in Resources */,
 				AA62E6082B2019F30045263A /* Assets.xcassets in Resources */,
+				AA62E63A2B201DCA0045263A /* SignUpViewController.xib in Resources */,
+				AA8054C32B201EA80045476A /* HomeViewController.xib in Resources */,
 				AA62E6062B2019F20045263A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,9 +474,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA62E6352B201DB20045263A /* LoginViewController.swift in Sources */,
 				AA62E6032B2019F20045263A /* ViewController.swift in Sources */,
 				AA62E5FF2B2019F20045263A /* AppDelegate.swift in Sources */,
+				AA8054C62B201EE10045476A /* NSObject.swift in Sources */,
 				AA62E6012B2019F20045263A /* SceneDelegate.swift in Sources */,
+				AA62E6392B201DCA0045263A /* SignUpViewController.swift in Sources */,
+				AA8054C22B201EA80045476A /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -594,6 +661,7 @@
 				DEVELOPMENT_TEAM = P82L6D3NV5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ChatApp/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -623,6 +691,7 @@
 				DEVELOPMENT_TEAM = P82L6D3NV5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ChatApp/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
